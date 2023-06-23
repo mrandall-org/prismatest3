@@ -18,5 +18,6 @@ resource "aws_vpc" "demovpc" {
     git_org              = "blahsi"
     git_repo             = "awstest"
     yor_trace            = "a92e23ac-ff39-4007-ac84-ec0c054f0ae8"
+    nikhil               = "owneremail.address.test.com"
   }
 }
