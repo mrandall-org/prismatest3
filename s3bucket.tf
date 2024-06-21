@@ -1,10 +1,3 @@
-# Terraform configuration file
-
-# Define the required provider
-provider "aws" {
-  region = "us-east-1"  # Specify the AWS region
-}
-
 # Create an S3 bucket
 resource "aws_s3_bucket" "my_bucket" {
   bucket = "s3testbucket"  # Replace with your desired bucket name
