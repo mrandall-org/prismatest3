@@ -5,12 +5,21 @@ provider "aws" {
 
 # Create an S3 bucket
 resource "aws_s3_bucket" "my_bucket" {
-  bucket = "iacbucket5"  # Replace with your desired bucket name
-  acl    = "private"                      # Access control list
+  bucket = "iacbucket5" # Replace with your desired bucket name
+  acl    = "private"    # Access control list
 
   tags = {
-    Name        = "iacbucket5"
-    Environment = "Development"
+    Name                 = "iacbucket5"
+    Environment          = "Development"
+    git_commit           = "bd04c2c1e6efa48345bff3561d2e5319f6e08744"
+    git_file             = "awsmain.tf"
+    git_last_modified_at = "2024-06-21 15:25:55"
+    git_last_modified_by = "113141616+blahsi@users.noreply.github.com"
+    git_modifiers        = "113141616+blahsi"
+    git_org              = "blahsi"
+    git_repo             = "awstest"
+    yor_name             = "my_bucket"
+    yor_trace            = "be734335-aecf-4a2d-840a-eca932356e16"
   }
 }
 
