@@ -5,7 +5,7 @@ provider "aws" {
 
 # Create an S3 bucket
 resource "aws_s3_bucket" "my_bucket" {
-  bucket = "s3testbucket"  # Replace with your desired bucket name
+  bucket = "iacruletestbucket"  # Replace with your desired bucket name
   acl    = "private"                      # Access control list
 
   tags = {
