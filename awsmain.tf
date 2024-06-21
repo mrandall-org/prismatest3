@@ -7,20 +7,6 @@ provider "aws" {
 resource "aws_s3_bucket" "my_bucket" {
   bucket = "iacruletestbucket" # Replace with your desired bucket name
   acl    = "private"           # Access control list
-
-  tags = {
-    Name                 = "MyBucket"
-    Environment          = "Development"
-    git_commit           = "90b83ea8d393f13e4a699738644a8f0268f0959d"
-    git_file             = "awsmain.tf"
-    git_last_modified_at = "2024-06-21 15:02:23"
-    git_last_modified_by = "113141616+blahsi@users.noreply.github.com"
-    git_modifiers        = "113141616+blahsi"
-    git_org              = "blahsi"
-    git_repo             = "awstest"
-    yor_name             = "my_bucket"
-    yor_trace            = "cb8b5a15-8acc-4eda-9557-698fd4ea577d"
-  }
 }
 
 # Define the bucket policy
