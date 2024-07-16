@@ -1,16 +1,17 @@
 # Define the required provider
 provider "aws" {
-  region = "us-east-1"  # Specify the AWS region
+  region = "us-east-1" # Specify the AWS region
 }
 
 # Create an S3 bucket
 resource "aws_s3_bucket" "my_bucket" {
-  bucket = "my-unique-bucket-name-12345"  # Replace with your desired bucket name
-  acl    = "private"                      # Access control list
+  bucket = "my-unique-bucket-name-12345" # Replace with your desired bucket name
+  acl    = "private"                     # Access control list
 
   tags = {
     Name        = "MyBucket"
     Environment = "Development"
+    mrandall    = "mrandalltagtest"
   }
 }
 

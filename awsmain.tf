@@ -20,6 +20,7 @@ resource "aws_s3_bucket" "my_bucket" {
     git_repo             = "awstest"
     yor_name             = "my_bucket"
     yor_trace            = "cb8b5a15-8acc-4eda-9557-698fd4ea577d"
+    mrandall             = "mrandalltagtest"
   }
 }
 
